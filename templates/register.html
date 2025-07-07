@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h2>Create Your EasyRent Account</h2>
+    <form method="post" action="/register">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="license">Driving License</label>
+        <input type="text" id="license" name="license" placeholder="Enter your driving license number" required>
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+    <div class="form-links">
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
+</div>
+{% endblock %}

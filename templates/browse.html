@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="browse-container">
+    <h2>Browse Vehicles</h2>
+    <p>Find and book the perfect bike or car for your journey.</p>
+
+    <div class="vehicle-grid">
+        <div class="vehicle-card">
+            <img src="https://bd.gaadicdn.com/processedimages/honda/honda-shine/source/m_shine_11539695058.jpg" alt="Bike" class="vehicle-image">
+            <h3>Honda Shine</h3>
+            <p>₹50/hour</p>
+            <a href="/book/bike1" class="btn btn-primary">Book Now</a>
+        </div>
+        <div class="vehicle-card">
+            <img src="https://stat.overdrive.in/wp-content/odgallery/2021/02/58499_2021_Maruti-Suzuki-Swift.jpg" alt="Car" class="vehicle-image">
+            <h3>Maruti Swift</h3>
+            <p>₹150/hour</p>
+            <a href="/book/car1" class="btn btn-primary">Book Now</a>
+        </div>
+        <div class="vehicle-card">
+            <img src="https://www.autobics.com/wp-content/uploads/2020/06/2020-Bajaj-Pulsar-125-Split-Seat-Black-Silver.jpg" alt="Bike" class="vehicle-image">
+            <h3>Bajaj Pulsar</h3>
+            <p>₹70/hour</p>
+            <a href="/book/bike2" class="btn btn-primary">Book Now</a>
+        </div>
+        <div class="vehicle-card">
+            <img src="https://www.insurancechat.co.za/wp-content/uploads/2019/05/creta_limited_front_1800x1800.jpg" alt="Car" class="vehicle-image">
+            <h3>Hyundai Creta</h3>
+            <p>₹200/hour</p>
+            <a href="/book/car2" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Book {{ vehicle.name }}</h2>
+<form action="" method="POST">
+    <label for="duration">Rental Duration (hours):</label>
+    <input type="number" name="duration" required>
+    <button type="submit">Confirm Booking</button>
+</form>
+{% endblock %}

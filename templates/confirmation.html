@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Booking Confirmed</h2>
+<p>You have booked {{ vehicle.name }}.</p>
+<p>Total Fare: ₹{{ total_fare }}</p>
+<p>Pickup Location: {{ vehicle.location }}</p>
+<a href="/browse">Browse More</a>
+{% endblock %}

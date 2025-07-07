@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="index-container">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Welcome to EasyRent</h1>
+            <p>Your one-stop solution for renting bikes and cars conveniently and efficiently.</p>
+            <div class="cta-buttons">
+                <a href="/login" class="btn">Login</a>
+                <a href="/register" class="btn btn-secondary">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Highlights Section -->
+    <section class="info-section highlights">
+        <h2>Why EasyRent?</h2>
+        <div class="highlights-grid">
+            <div class="highlight">
+                <img src="{{ url_for('static', filename='images/maxresdefault.jpg') }}" alt="Simple Interface">
+                <h3>Simple Interface</h3>
+                <p>An intuitive platform designed for ease of use.</p>
+            </div>
+            <div class="highlight">
+                <img src="{{ url_for('static', filename='images/maxresdefault.jpg') }}" alt="Real-Time Availability">
+                <h3>Real-Time Availability</h3>
+                <p>See vehicle availability in real-time.</p>
+            </div>
+            <div class="highlight">
+                <img src="{{ url_for('static', filename='images/maxresdefault.jpg') }}" alt="Transparent Pricing">
+                <h3>Transparent Pricing</h3>
+                <p>Clear and competitive pricing tailored to your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="info-section steps">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>Register</h3>
+                <p>Sign up with your email and driving license.</p>
+                <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7965.jpg" alt="Register Step">
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>Browse</h3>
+                <p>View available vehicles near your location.</p>
+                <img src="{{ url_for('static', filename='images/browse-step.svg') }}" alt="Browse Step">
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>Book</h3>
+                <p>Select a vehicle, set the duration, and confirm your booking.</p>
+                <img src="{{ url_for('static', filename='images/book-step.svg') }}" alt="Book Step">
+            </div>
+            <div class="step">
+                <span class="step-number">4</span>
+                <h3>Ride</h3>
+                <p>Pick up your vehicle and enjoy your ride.</p>
+                <img src="{{ url_for('static', filename='images/ride-step.svg') }}" alt="Ride Step">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="info-section contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us at <a href="mailto:support@easyrent.com">support@easyrent.com</a>.</p>
+        <img src="{{ url_for('static', filename='images/contact.svg') }}" alt="Contact Us">
+    </section>
+</div>
+{% endblock %}
